@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #0f172a;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* MAIN CARD */
+.resume {
+  background: white;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 34px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+.contact {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 18px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.contact a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* SECTION */
+.section {
+  margin-top: 30px;
+  align-items: center;
+}
+
+.section h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #1d4ed8;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 40px;
+  height: 3px;
+  background: #3b82f6;
+  border-radius: 2px;
+}
+
+/* ITEM (COMPACT BUT CLEAN) */
+.item {
+  padding: 12px 14px;
+  border-left: 3px solid #e2e8f0;
+  margin-bottom: 12px;
+  background: #f8fafc;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.item:hover {
+  border-left: 3px solid #3b82f6;
+  transform: translateX(3px);
+}
+
+.role {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+}
+
+.meta {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 3px;
+}
+
+ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+li {
+  font-size: 13px;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .resume {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+}
